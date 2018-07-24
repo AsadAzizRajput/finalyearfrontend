@@ -1,0 +1,59 @@
+   <div class="header-area header-absolute">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-2 col-sm-4 col-xs-6">
+                  <div class="logo">
+                    <a href="index-2.html"><img src="./assets/img/logo.png" alt=""></a>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-8">
+                  <div class="mainmenu">
+                     <ul id="slicknav-menu-list">
+                         <li><a ui-sref="home">Home</a>
+                         </li>
+                         <li><a ui-sref="tourlist">Tours</a>
+                             <!-- <ul>
+                                 <li><a href="tours-details.html">Tours Details</a></li>
+                             </ul> -->
+                         </li>
+                         <li><a ui-sref="">About</a></li>
+                      
+                         <li><a ui-sref="">Team</a>
+                            <li><a ui-sref="">Contact Us</a></li>
+                             <!-- <ul>
+                                 <li><a href="team-details.html">Team Details</a></li>
+                             </ul> -->
+                         </li>
+                      
+                     </ul> 
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-8 col-xs-6">
+                <div class="header-right">
+                    <ul class="language-selector" ng-show=flag>
+                        <li><a href="#" class="header-flug"><i class="zmdi zmdi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="#" ng-show="usertype=='traveller'" ui-sref='travellerprofile'> <span>Profile</span></a></li>
+                                <li><a href="#" ng-show="usertype=='travellingagency'"  ui-sref='travellingagencyprofile'> <span>Profile</span></a></li>
+                                <li><a href="#" ng-show="usertype=='travellingagency'"  ui-sref='createtour'> <span>Create Tour</span></a></li>
+                                <li><a href="#" ng-show="usertype=='propertylender'" ui-sref='propertylenderprofile'> <span>Profile</span></a></li>
+                                <li><a href="#" ng-show="usertype=='travellingagency'" ui-sref='tours'> <span>Tours</span></a></li>
+                                <li><a href="#" ng-click="logout()"> <span>Logout</span></a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+               
+                    <a href="login.html" ng-show=flag>Welcome {{useremail}}</a>
+                    <a href="login.html" ng-hide=flag ui-sref="login">Login</a>
+                    <a href="register.html" ng-hide=flag ui-sref="register">Register</a>
+                </div>
+                <div class="slicknav-menu-wrap"></div>
+            </div>
+             
+              
+          </div>
+          
+      </div>
+      
+  </div>

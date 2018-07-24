@@ -1,0 +1,72 @@
+<simple-navbar></simple-navbar>
+
+<div class="page-title-area black-overlay text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title-inner">
+                    <div class="page-title-inner-table-cell">
+                        <h1>Your Tours Queries</h1>        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="cart-page-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cart-page-content">
+                    <table class="cart-products">
+                        <tr class="cart-products-heading-pink" style="background-color: #0c6c01">
+                            <th class="cart-products-cross responsive-display product-cart"></th>
+                            <th class="cart-products-image responsive-display product-cart"></th>
+                            <th class="cart-products-product product-cart">Traveller Name</th>
+                            <th class="cart-products-price product-cart">Traveller Email</th>
+                            <th class="cart-products-quantiry product-cart">Traveller Contact</th>
+                            <th class="cart-products-quantiry product-cart">No.of Adults/Childs Contact</th>
+                            <th class="cart-products-total product-cart">Message</th>
+                        </tr>
+                        <tr class="car-products-row-padding" ng-repeat="data in queries track by $id(data)">
+                            <td class="cart-products-cross">
+                               
+                            </td>
+                            <td class="cart-products-image">
+                                {{data.name}}
+                            </td>
+                            <td class="cart-products-product">
+                             
+                            </td>
+                            <td class="cart-products-price">
+                                {{data.travelleremail}}
+                               
+                            </td>
+                            
+                            <td class="cart-products-quantity">
+                                    {{data.phonenumber}}
+                               
+                            
+                            </td>
+                            <td class="cart-products-total">
+                                    {{data.numberofadults}}/{{data.numberofkids}}
+                            </td>
+                            <td class="car-products-row-padding" >
+                                    {{data.message}}
+                                </td>
+                        </tr>
+                     
+                        
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<simple-footer></simple-footer>

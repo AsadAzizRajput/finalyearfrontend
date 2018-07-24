@@ -1,0 +1,100 @@
+<simple-navbar></simple-navbar>
+
+<div class="page-title-area black-overlay text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title-inner">
+                    <div class="page-title-inner-table-cell">
+                        <h1>Welcome To Paktravellersmania</h1>
+                        <a href="tours.html" class="pink-btn">View All Tours</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="booking-page-content-area car-booking-page-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="booking-page-left-form">
+                    <div class="booking-form-heading padding-bottom">
+                        <h3>Your Personal Information</h3>
+                        <p style="color:green" ng-show="updateprofileflag">Your profile has been updated.</p>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" name="first-name" placeholder="First name" ng-model="formData.name.firstname">
+                                <p style="color:red" ng-show="flag.confirmpassword">Password is different from the above</p>
+                            </div>
+                            <div class="col-sm-6">
+                               
+                                <input type="text" name="last-name" placeholder="Last name" ng-model="formData.name.lastname">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                    <input type="email" name="email" placeholder="Email" ng-model="travellerEmail" disabled >
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" name="nic" placeholder="NIC" ng-model="formData.nic">
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <input type="text" name="phone" placeholder="Phone" ng-model="formData.mobilenumber">
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <a href="" class="pink-btn" ng-click="updateTraveller()">Save</a>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="myFileField">Select a file: </label>
+                                <input type="file" demo-file-model="myFile"  class="form-control" id ="myFileField"/>
+                            </div>
+                            <button ng-click="uploadFile()" class = "btn btn-primary">Upload File</button>
+                        </form>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-md-4">
+                  <div style="padding-top: 160px !important"></div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="myFileField">Select a file: </label>
+                                <input type="file" demo-file-model="myFile"  class="form-control" id ="myFileField"/>
+                            </div>
+                            <!-- <button ng-click="uploadFile()" class = "btn btn-primary">Upload File</button> -->
+                        </form>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+
+   
+</div>
+
+<simple-footer></simple-footer>

@@ -1,0 +1,94 @@
+<simple-navbar></simple-navbar>
+
+<div class="page-title-area black-overlay text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title-inner">
+                    <div class="page-title-inner-table-cell">
+                        <h1>Welcome To Paktravellersmania</h1>
+                        <!-- <a href="tours.html" class="pink-btn">View All Tours</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="booking-page-content-area car-booking-page-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="booking-page-left-form">
+                    <div class="booking-form-heading padding-bottom" style="padding-bottom: 10px !important;">
+                        <h3>Create Your Tour</h3>
+                        <hr />
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" name="tour-name" placeholder="Tour Name" ng-model="formData.name">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" name="price" placeholder="Price Per Person" ng-model="formData.price" onlyNum>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="number" name="numberofnights" placeholder="Number Of Nights" ng-model="formData.numberofnights" onlyNum>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" name="numberofdays" placeholder="Number Of Days" ng-model="formData.numberofdays"  onlyNum>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm-4">
+                                <input type="text" name="departurelocation" placeholder="Departure Location" ng-model="formData.departurelocation">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" name="returnlocation" placeholder="Return Location" ng-model="formData.returnlocation" >
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" name="departuretime" placeholder="Departure Time" ng-model="formData.departuretime" >
+                            </div>
+                        </div>
+ 
+                            <div class="row">
+
+                                    <div class="col-sm-12">
+                                        <!-- <input type="text" name="tourdetails" placeholder="Tour Details" ng-model="formData.tourdetails" style="height: 30px;"> -->
+                                        <textarea rows="3" cols="90" name="comment"  style="border: none;background: #f3f3f3;" ng-model="formData.tourdetails">
+                                            Enter Tour Details
+                                        </textarea>
+                                    </div>
+
+                                </div>
+                            
+    
+                        
+                                
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <a href="" class="pink-btn" ng-click="createTour()">Save</a>
+                            </div>
+
+                            
+                            
+                            
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<simple-footer></simple-footer>

@@ -1,0 +1,128 @@
+
+    <simple-navbar></simple-navbar>
+    <div class="page-title-area black-overlay text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-title-inner">
+                        <div class="page-title-inner-table-cell">
+                            <h1>Welcome To Paktravellersmania</h1>
+                            <a href="tours.html" class="pink-btn">View All Tours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="booking-page-content-area car-booking-page-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="booking-page-left-form">
+                        <div class="booking-form-heading padding-bottom" style="padding-bottom: 10px !important;">
+                            <h3>Your Information</h3>
+                            <hr />
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" name="first-name" placeholder="First Name" ng-model="formData.name.firstname">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" name="last-name" placeholder="Last Number" ng-model="formData.name.lastname">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="email" name="email" placeholder="Email" ng-model="travellingagencyemail" disabled>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="number" name="nic" placeholder="Owner NIC" ng-model="formData.nic"  onlyNum>
+                                </div>
+                            </div>
+                            <div class="row">
+    
+                                <div class="col-sm-6">
+                                    <input type="number" name="phone" placeholder="Phone" ng-model="formData.contactnumber.mobilenumber"  onlyNum>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="number" name="land-line" placeholder="Landline" ng-model="formData.contactnumber.landlinenumber"   onlyNum>
+                                </div>
+                            </div>
+                            <div class="row">
+    
+                                <div class="col-sm-12">
+                                    <h4>Address</h4>
+                                    <hr />
+                                </div>
+                            </div>
+    
+                            <div class="row">
+    
+                                    <div class="col-sm-4">
+                                        <input type="number" name="zipcode" placeholder="Zipcode"  ng-model="formData.address.zipcode"  onlyNum>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="text" name="city" placeholder="City" ng-model="formData.address.city">
+                                    </div>
+                                    <div class="col-sm-4">
+                                            <input type="text" name="province" placeholder="Province" ng-model="formData.address.province">
+                                        </div>
+                                </div>
+    
+    
+                                <div class="row">
+    
+                                        <div class="col-sm-12">
+                                            <input type="text" name="addressLine" placeholder="Address" ng-model="formData.address.agencyaddressline">
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                    <div class="col-sm-12">
+                                            <h4>Property Type</h4>
+                                            <hr />
+                                        </div>
+                                    <div class="row">
+    
+                                            <div class="col-sm-12">
+                                                   
+                                                            <select ng-model="formData.propertytype">
+                                                                    <option value="" disabled selected>Select the type of your property</option>
+                                                                    <option value="vehicles">Vehicles</option>
+                                                                    <option value="homes">Homes</option>
+                                                                   
+                                                                  </select>
+                                                       
+                                            </div>
+                                           
+                                            
+                                        </div>
+        
+                            
+                                    
+                            <div class="row">
+    
+                                <div class="col-sm-6">
+                                    <a href="" class="pink-btn" ng-click="updatePropertylender()">Save</a>
+                                </div>
+
+                                
+                                
+                                
+                            </div>
+    
+    
+    
+    
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <simple-footer></simple-footer>

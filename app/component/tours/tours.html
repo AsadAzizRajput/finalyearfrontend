@@ -1,0 +1,76 @@
+<simple-navbar></simple-navbar>
+
+<div class="page-title-area black-overlay text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title-inner">
+                    <div class="page-title-inner-table-cell">
+                        <h1>Your Tours</h1>
+                        <!-- <a href="tours.html" class="pink-btn">View All Tours</a> -->
+                        <!-- <div class="page-title-menu">
+                            <ul>
+                                <li><a href="index-2.html">Home</a></li>
+                                <li><a href="#">Register</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="cart-page-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cart-page-content">
+                    <table class="cart-products">
+                        <tr class="cart-products-heading-pink" style="background-color: #0c6c01">
+                            <th class="cart-products-cross responsive-display product-cart"></th>
+                            <th class="cart-products-image responsive-display product-cart"></th>
+                            <th class="cart-products-product product-cart">Tour Name</th>
+                            <th class="cart-products-price product-cart">Price Per Person</th>
+                            <th class="cart-products-quantiry product-cart">No of Days/Nights</th>
+                            <th class="cart-products-total product-cart">Action</th>
+                        </tr>
+                        <tr class="car-products-row-padding" ng-repeat="data in tours track by $id(data)">
+                            <td class="cart-products-cross">
+                                <!-- <i class="fa fa-close"></i> -->
+                            </td>
+                            <td class="cart-products-image">
+                                <!-- <img src="assets/img/cart-img-1.jpg" alt=""> -->
+                            </td>
+                            <td class="cart-products-product">
+                                {{data.name}}
+                            </td>
+                            <td class="cart-products-price">
+                                Rs . {{data.price}}
+                               
+                            </td>
+                            
+                            <td class="cart-products-quantity">
+                                {{data.numberofdays}}/{{data.numberofnights}}
+                            
+                            </td>
+                            <td class="cart-products-total">
+                                <button type="button" class="btn btn-danger" ng-click="deletetour(data)">Delete</button>
+                                <button type="button" class="btn btn-success"ng-click="seeQueries(data)">Queries</button>
+                            </td>
+                        </tr>
+                        <hr>
+                        <tr class="car-products-row-padding" >
+                            {{data.bookingquery}}
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<simple-footer></simple-footer>

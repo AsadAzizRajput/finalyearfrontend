@@ -1,0 +1,26 @@
+ <h2>File Upload Demo</h2>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form>
+                <div class="form-group">
+                    <label for="myFileField">Select a file: </label>
+                    <input type="file" demo-file-model="myFile"  class="form-control" id ="myFileField"/>
+                </div>
+                <button ng-click="uploadFile()" class = "btn btn-primary">Upload File</button>
+            </form>
+        </div>
+    </div>
+    <div>{{serverResponse}}</div>
+
+    <!-- <form ng-submit="submit()">
+
+        <div>
+            <input type="text" ng-model="product.title">
+        </div>
+        <div>
+
+            <input type="file" name="" id="file">
+        </div>
+        <button>Post</button>
+    </form> -->

@@ -1,0 +1,50 @@
+<simple-navbar></simple-navbar>
+
+    <div class="page-title-area black-overlay text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-title-inner">
+                        <div class="page-title-inner-table-cell">
+                            <h1>Welcome To Paktravellersmania</h1>
+                            <a href="tours.html" class="pink-btn">View All Tours</a>
+                            <!-- <div class="page-title-menu">
+                                <ul>
+                                    <li><a href="index-2.html">Home</a></li>
+                                    <li><a href="#">Register</a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="destinations-page-content-area section-padding">
+    <div class="sea-tours-columns padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4" ng-repeat="data in tours track by $id(data)">
+                    <div class="single-sea-tours-item" ng-click="seeDetail(data)">
+                        <div class="single-sea-tours-image single-sea-tours-image1 black-overlay ">
+                            <a  class="pink-btn">Rs . {{data.price}}</a>
+                            <h2>{{data.name}}</h2>
+                        </div>
+                        <div class="single-sea-tours-text">
+                            <h5>{{data.name}}- {{data.numberofdays}} Days in {{data.name}}</h5>
+                            <span class="post-day-count">
+                                <a href="#"><i class="zmdi zmdi-time"></i> {{data.numberofdays}} Days & {{data.numberofnights}} nigths </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+    </div>
+<simple-footer></simple-footer>

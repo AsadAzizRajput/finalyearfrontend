@@ -1,0 +1,134 @@
+
+    <simple-navbar></simple-navbar>
+
+   
+
+    <div class="page-title-area black-overlay text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-title-inner">
+                        <div class="page-title-inner-table-cell">
+                            <h1>Welcome To Paktravellersmania</h1>
+                            <a href="tours.html" class="pink-btn">View All Tours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="tours-details-area-content section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="tours-details-content-left">
+                    <div class="tours-gallery-heading">
+                        <h2>{{tourDetails.name}}</h2>
+                        <h4>{{tourDetails.numberofdays}}DAYS - {{tourDetails.numberofnights}} NIGHTS</h4>
+                    </div>
+                    <div class="tours-details-gallery" >
+                        <img src="assets/img/tours-details-gallery-single2.jpg" alt="">
+                    </div>
+                    
+                 
+                    <div class="tab-content tours-details-tab-content padding-top">
+                        <div role="tabpanel" class="tab-pane fade in active" id="detail">
+                           <div class="tours-details-menu-bottom">
+                                <h2>About {{tourDetails.name}}</h2>
+                                <p>{{tourDetails.tourdetails}}</p>
+                               
+                            </div>
+                            <div class="tourist-details-information">
+                                <div class="tourist-details-single-row">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h5>Departure & Return Location</h5>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>{{tourDetails.departurelocation}}. {{tourDetails.returnlocation}} </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tourist-details-single-row">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h5>Departure Time</h5>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>{{tourDetails.departuretime}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                            </div> 
+                        </div>
+                      
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tours-details-content-right">
+                    <div class="right-details-form padding-bottom">
+                        <h3 style="background:#0c6c01"><span>Price Per Person</span>   Rs . {{tourDetails.price}}</h3>
+                        <h4>Book the tour</h4>
+                        <form >
+                            <input type="text" placeholder="Name" name="name" ng-model="formData.name">
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="select-item-adults-kids">
+                                        Adults 
+                                        <select name="adult-select" id="adult-select" ng-model="formData.numberofadults">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="select-item-adults-kids">
+                                        Kids 
+                                        <select name="kids-select" id="kids-select" ng-model="formData.numberofkids">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="number" placeholder="Phone" name="phone" ng-model="formData.phonenumber" onlyNum style="border:none;width: 100%;">
+
+                  
+                            <textarea name="details-message" id="details-message" cols="30" rows="10" placeholder="Message"  ng-model="formData.message"></textarea>
+                            <button type="submit" class="pink-btn" ng-click="sendQuery()">Send Your Query</button>
+                        </form>
+                    </div>
+                    
+            
+                    
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<simple-footer></simple-footer>

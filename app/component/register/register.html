@@ -1,0 +1,65 @@
+<simple-navbar></simple-navbar>
+    <div class="page-title-area black-overlay text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-title-inner">
+                        <div class="page-title-inner-table-cell">
+                            <h1>Register yourself</h1>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="login-page-content-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-page-logo text-center">
+                    <img src="./assets/img/logo.png" alt="">
+                    <p>Please provide the following information to register yourself</p>
+                    <p style="color:red" ng-show="flag.useralready">{{errormessage}} </p>
+                </div>
+                <div class="login-form-div">
+                    <form>
+                        <!-- <input type="text" name="user-name" placeholder="User Name"> -->
+                        <p style="color:red" ng-show="flag.email">Email you entered is not valid</p>
+                        <p style="color:red" ng-show="flag.userexist">User already exist</p>
+                        <input type="text" name="email" placeholder="Email" ng-model="formData.email">
+
+                        <p style="color:red" ng-show="flag.passwordlimit">Password must be more than 8 characters</p>
+                        <input type="password" name="password" placeholder="Password" ng-model="formData.password">
+
+                        <p style="color:red" ng-show="flag.confirmpassword">Password is different from the above</p>
+                        <input type="password" name="confirm-password" placeholder="Confirm Password" ng-model="formData.confirmPassword">
+                        
+                        <p style="color:red" ng-show="flag.usertype" >Please select appropriate user type</p>
+                        <select ng-model="formData.userType" style=" width: 100%;
+                        height: 50px;
+                        padding-left: 10px;
+                        border: none;
+                    ">
+                            <option value="" disabled selected>Select which type of user you are</option>
+                            <option value="traveller">Traveller</option>
+                            <option value="travellingagency">Travelling Agency</option>
+                            <option value="propertylender">Property Lender</option>
+                           
+                          </select>
+                          <p style="color:red" ng-show="flag.terms">Please agree to our terms and condition</p>
+                        <input type="checkbox" name="checkbox" id="login-checkbox" value="value" ng-model="formData.terms">
+                      
+                        <label for="login-checkbox">I agree to the terms of use and privacy.</label>
+                        <button ng-click="registerUser()" type="submit" >Register Now</button>
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<simple-footer></simple-footer>
